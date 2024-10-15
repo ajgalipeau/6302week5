@@ -62,29 +62,35 @@ Grandparent Directory: GitHub
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/database_principles_csc6302.git
-   cd database_principles_csc6302
+   [git clone https://github.com/yourusername/database_principles_csc6302.git](https://github.com/ajgalipeau/6302week5.git)
+   cd <path>\6302week5
    ```
 
 2. **Create a Virtual Environment**
    ```bash
    python3 -m venv togavenv
-   source togavenv/bin/activate  # On Windows use `togavenv\Scripts\activate`
+   source togavenv/bin/activate  # On Windows use `<path>\togavenv\Scripts\Activate.ps1` && ensure you give Powershell remote signing privileges 
    ```
 
 3. **Install Required Packages**
    ```bash
    pip install -r application/requirements.txt
+   # Preferred method - use the Makefile
+   # or go to the application folder path
+   make install
    ```
 
 4. **MySQL Database Setup**
-   - Ensure that MySQL is installed and running.
+   - Ensure that MySQL is installed and running either in Code,Docker, MySQL Workbench, or your db tool of choice
    - Execute the SQL scripts in the `sql/` directory to create tables, add procedures, and insert sample data.
 
    ```bash
    mysql -u admin_user -p < sql/ddl.sql
-   mysql -u admin_user -p < sql/procedure_functions.sql
    mysql -u admin_user -p < sql/dml.sql
+   mysql -u admin_user -p < sql/users.sql
+   mysql -u admin_user -p < sql/permissions.sql
+   mysql -u admin_user -p < sql/procedure_functions.sql
+   mysql -u admin_user -p < sql/query.sql
    ```
 
 ## Running the Application
