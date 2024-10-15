@@ -6,7 +6,7 @@ Holder:
 Aaron Galipeau  
 M.S. Computer Science Student  
 Merrimack College  
-Lecturer: Robert Sands  
+Lecturer: Robert Sand 
 Course: CSC6302 Database Principles
 
 This license allows the project to be used, modified, and shared for educational purposes only. Commercial use or redistribution is strictly prohibited without prior written permission.
